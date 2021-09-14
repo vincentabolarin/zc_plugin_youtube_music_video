@@ -38,8 +38,9 @@ const Wrapper = styled.div`
     }
 
     .room-chat-container {
-      position: absolute;
-      top: 31px;
+      position: fixed;
+      top: 56px;
+      z-index: 1112;
       background: rgb(240, 240, 240);
       width: 347px;
       display: flex;

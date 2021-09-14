@@ -5,9 +5,11 @@ import styled from "styled-components";
 
 import chatEmoji from "../../media/chatEmoji.svg";
 import chatSend from "../../media/chatSend.svg";
-import chatGif from "../../media/chatGif.svg";
+import chatGif from "../../media/chatGif.svg"; 
+import { node } from "prop-types";
 
 function ChatInput() {
+
   return (
     <Wrapper>
       <input
@@ -41,6 +43,11 @@ const Wrapper = styled.div`
     line-height: 18px;
     border: none;
     outline: none;
+  }
+
+  .chat-input:focus {
+    position: absolute;
+    bottom: 15px;
   }
 
   .chat-icon-group {
