@@ -39,12 +39,18 @@ const Wrapper = styled.div`
 
     .room-chat-container {
       position: fixed;
-      top: 56px;
+      top: 70px;
       z-index: 1112;
       background: rgb(240, 240, 240);
       width: 347px;
       display: flex;
       justify-content: center;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .room-chat-container {
+      top: 50px;
     }
   }
 `;

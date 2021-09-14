@@ -15,6 +15,10 @@ function Chat() {
 
   if (!showChat) return null;
 
+  // function setFocused() {
+  //   var results = document.querySelectorAll()
+  // }
+
   return (
     <Wrapper>
       <ChatHeader />
@@ -23,7 +27,9 @@ function Chat() {
           <ChatItem key={index} {...chat} />
         ))}
       </div>
-      <ChatInput />
+      <div className="chat-input">
+        <ChatInput />
+      </div>
     </Wrapper>
   );
 }
@@ -48,6 +54,10 @@ const Wrapper = styled.div`
   @media (max-width: 1000px) {
     .chat-item-group {
       max-height: 450px;
+    }
+
+    .chat-input:focus + .chat-item-group {
+      height: 150px;
     }
   }
 `;

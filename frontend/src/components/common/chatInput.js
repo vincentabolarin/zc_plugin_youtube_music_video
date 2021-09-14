@@ -45,10 +45,10 @@ const Wrapper = styled.div`
     outline: none;
   }
 
-  .chat-input:focus {
-    position: absolute;
-    bottom: 15px;
-  }
+  // .chat-input:focus {
+  //   position: absolute;
+  //   bottom: 65px;
+  // }
 
   .chat-icon-group {
     flex-basis: 90px;
