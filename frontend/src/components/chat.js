@@ -15,9 +15,25 @@ function Chat() {
 
   if (!showChat) return null;
 
-  // function setFocused() {
-  //   var results = document.querySelectorAll()
-  // }
+  function setFocused() {
+    var results = document.querySelectorAll('.chat-item-group');
+    for(result of results) {
+      result.classList.add('focused');
+    }
+  }
+
+  function unsetFocused() {
+    var results = document.querySelectorAll('.chat-item-group');
+    for (result of results) {
+      result.classList.remove('focused');
+    }
+  }
+
+  var results = document.querySelectorAll('chat-input');
+  for (result of results) {
+    result.addEventListener('focusin', setFocused);
+    result.addEventListener('focusout', unsetFocused);
+  }
 
   return (
     <Wrapper>
@@ -54,10 +70,6 @@ const Wrapper = styled.div`
   @media (max-width: 1000px) {
     .chat-item-group {
       max-height: 450px;
-    }
-
-    .chat-input:focus + .chat-item-group {
-      height: 150px;
     }
   }
 `;
