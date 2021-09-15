@@ -41,15 +41,11 @@ const Wrapper = styled.div`
     .room-chat-container {
       position: fixed;
       top: 70px;
-<<<<<<< HEAD:frontend/src/components/musicRoom.js
       z-index: 1112;
-=======
->>>>>>> 7d7ceb7046a8a3b64c120eb1747e77edae6e6dbb:frontend/src/components/musicRoom.tsx
       background: rgb(240, 240, 240);
       flex-basis: 40%;
       display: flex;
       justify-content: center;
-      z-index: 111;
     }
   }
 
